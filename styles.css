@@ -1291,12 +1291,12 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.94);
   z-index: 2000;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 16px;
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition-fast);
@@ -1309,29 +1309,46 @@ img {
 
 .modal-container {
   width: 100%;
-  max-width: 900px;
-  background-color: var(--card-dark);
-  border: 1px solid var(--red-accent);
+  max-width: 860px;
+  background-color: #111111;
+  border: 2px solid var(--red-accent);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.95);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 14px;
+  background-color: #161616;
+  border-bottom: 1px solid #282828;
 }
 
 .modal-close-btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
+  position: relative;
+  top: auto;
+  right: auto;
   background-color: var(--red-accent);
   color: var(--text-white);
   border: none;
-  width: 36px;
-  height: 36px;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
   cursor: pointer;
   z-index: 10;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
+  transition: background-color var(--transition-fast);
+}
+
+.modal-close-btn:hover {
+  background-color: var(--red-accent-hover);
 }
 
 .modal-iframe-wrapper {
