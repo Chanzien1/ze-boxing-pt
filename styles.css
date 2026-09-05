@@ -1291,12 +1291,12 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.94);
   z-index: 2000;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 12px;
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition-fast);
@@ -1308,12 +1308,13 @@ img {
 }
 
 .modal-container {
-  width: 100%;
-  max-width: 900px;
+  width: 96vw;
+  max-width: 1280px;
   background-color: var(--card-dark);
   border: 1px solid var(--red-accent);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
 }
 
 .modal-close-btn {

@@ -53,28 +53,82 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => el.classList.add('is-visible'));
   }
 
-  // 3. Video Modal Logic for YouTube/Vimeo Embeds
+  // 3. Video Modal Logic for YouTube Embeds with IFrame API & HD1080 Quality
   const videoModal = document.getElementById('videoModal');
   const modalIframe = document.getElementById('modalIframe');
   const modalCloseBtn = document.getElementById('modalCloseBtn');
   const videoCards = document.querySelectorAll('[data-video-id]');
 
+  // Load YouTube IFrame Player API script asynchronously
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  if (firstScriptTag && firstScriptTag.parentNode) {
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  } else {
+    document.head.appendChild(tag);
+  }
+
+  let ytPlayer = null;
+
+  function enforceHDQuality(player) {
+    if (!player) return;
+    if (typeof player.setPlaybackQuality === 'function') {
+      player.setPlaybackQuality('hd1080');
+    }
+    if (typeof player.setSuggestedQuality === 'function') {
+      player.setSuggestedQuality('hd1080');
+    }
+  }
+
   function openVideoModal(youtubeId) {
     if (!videoModal || !modalIframe) return;
-    // When running directly from local file system (file://), YouTube restricts embedded playback with Error 153.
-    // We open the video in YouTube directly or embed cleanly depending on environment.
     if (window.location.protocol === 'file:') {
       window.open(`https://www.youtube.com/watch?v=${youtubeId}`, '_blank');
       return;
     }
-    modalIframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&playsinline=1&enablejsapi=1&rel=0&vq=hd1080&controls=1`;
+
+    const embedUrl = `https://www.youtube.com/embed/${youtubeId}?enablejsapi=1&autoplay=1&playsinline=1&rel=0&vq=hd1080&controls=1`;
+
     videoModal.classList.add('is-open');
     videoModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+
+    if (window.YT && window.YT.Player) {
+      if (!ytPlayer) {
+        modalIframe.src = embedUrl;
+        ytPlayer = new YT.Player('modalIframe', {
+          events: {
+            'onReady': (event) => {
+              event.target.playVideo();
+              enforceHDQuality(event.target);
+            },
+            'onStateChange': (event) => {
+              if (event.data === YT.PlayerState.PLAYING) {
+                enforceHDQuality(event.target);
+              }
+            }
+          }
+        });
+      } else {
+        modalIframe.src = embedUrl;
+        if (typeof ytPlayer.loadVideoById === 'function') {
+          ytPlayer.loadVideoById({
+            videoId: youtubeId,
+            suggestedQuality: 'hd1080'
+          });
+        }
+      }
+    } else {
+      modalIframe.src = embedUrl;
+    }
   }
 
   function closeVideoModal() {
     if (!videoModal || !modalIframe) return;
+    if (ytPlayer && typeof ytPlayer.stopVideo === 'function') {
+      try { ytPlayer.stopVideo(); } catch (e) {}
+    }
     videoModal.classList.remove('is-open');
     videoModal.setAttribute('aria-hidden', 'true');
     modalIframe.src = '';
