@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZE BOXING PT — 1-on-1 Boxing Personal Trainer Singapore</title>
+  <meta name="description" content="ZE BOXING PT — Mobile 1-on-1 boxing coaching in Singapore. Real fight experience, fundamentals, pad work, and ring IQ brought directly to your condo gym, park, or multi-story carpark.">
+  
+  <!-- Design System Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="nav-brand" aria-label="ZE BOXING PT Home">
+        ZE BOXING PT<span class="red-dot">.</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#what-you-get">What You Get</a></li>
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#client-highlights">Client Progress</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary nav-cta nav-cta-desktop">
+        Book A Session
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#profile">Profile</a>
+    <a href="#what-you-get">What You Get</a>
+    <a href="#highlights">Highlights</a>
+    <a href="#client-highlights">Client Progress</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact" class="btn btn-primary btn-full">Book A Session</a>
+  </div>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <picture>
+          <source media="(max-width: 768px)" srcset="Photo for first section of website mobile.jpg">
+          <img src="Photo for first section of website.jpg" alt="Boxing trainer Coach Z post-fight in ring">
+        </picture>
+      </div>
+      <div class="hero-overlay"></div>
+      
+      <div class="container">
+        <div class="hero-content reveal-on-scroll">
+          <h1 class="hero-title">
+            REAL FIGHT EXPERIENCE, <span class="highlight">IN EVERY SESSION</span>
+          </h1>
+
+          <p class="hero-subhead">
+            One-on-one boxing coaching that comes to you — fundamentals, pad work, and real ring IQ, not just cardio.
+          </p>
+
+          <div class="hero-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--red-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Singapore
+          </div>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              Book a session
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"/></svg>
+            </a>
+            <a href="#pricing" class="btn btn-secondary">
+              View Packages
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PROFILE (MEET THE COACH) SECTION -->
+    <section class="section-padding" id="profile">
+      <div class="container">
+        <div class="fighter-grid">
+          
+          <div class="fighter-image-wrapper reveal-on-scroll">
+            <div class="fighter-image">
+              <img src="photo_2026-08-26_16-39-30.jpg" alt="Coach Z boxing trainer">
+            </div>
+            <div class="fighter-frame-accent"></div>
+          </div>
+
+          <div class="fighter-info reveal-on-scroll">
+            <div class="section-tag">COACH PROFILE</div>
+            <h2 class="section-title">MEET ZI EN</h2>
+            <div class="red-divider"></div>
+
+            <p class="fighter-bio-text">
+              5+ years boxing, 2+ years coaching. 6 fights, 1 by KO.
+            </p>
+
+            <p class="fighter-details">
+              Real boxing technique from real fight experience. Precise and responsive pad work, defense, sparring drills, conditioning, whatever your goal, built around your level and pace. I come to you.
+            </p>
+
+            <!-- STAT CALLOUTS IN MONO FONT -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">YEARS BOXING</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">2+</div>
+                <div class="stat-label">YEARS COACHING</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">FIGHTS</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">1</div>
+                <div class="stat-label">KO</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. WHAT YOU GET SECTION (TRAINING PILLARS) -->
+    <section class="section-padding" id="what-you-get" style="background-color: #111111;">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">TRAINING PILLARS</div>
+          <h2 class="section-title">WHAT YOU GET</h2>
+          <p class="section-desc">Technical depth combined with relentless physical conditioning. Designed for beginner to advanced clients.</p>
+        </div>
+
+        <div class="benefits-grid">
+          
+          <!-- Card 1: Fundamentals (Boxing Glove Icon) -->
+          <div class="benefit-card reveal-on-scroll">
+            <span class="benefit-card-number">01 // TAILORED FUNDAMENTALS</span>
+            <div class="benefit-icon">
+              <!-- Boxing Glove Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path>
+                <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v6"></path>
+                <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path>
+                <path d="M18 8a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6v-2"></path>
+                <path d="M6 16v5h12v-5"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">FUNDAMENTALS TAILORED TO YOUR LEVEL</h3>
+            <p class="benefit-desc">Zero experience is fine. Master proper stance, footwork, punch mechanics, and head movement.</p>
+          </div>
+
+          <!-- Card 2: Pad Work (Stopwatch / Timer Icon) -->
+          <div class="benefit-card reveal-on-scroll">
+            <span class="benefit-card-number">02 // PRECISION PAD WORK</span>
+            <div class="benefit-icon">
+              <!-- Stopwatch Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="14" r="8"></circle>
+                <line x1="12" y1="2" x2="12" y2="6"></line>
+                <line x1="12" y1="10" x2="12" y2="14"></line>
+                <line x1="15" y1="11" x2="12" y2="14"></line>
+                <line x1="9" y1="2" x2="15" y2="2"></line>
+              </svg>
+            </div>
+            <h3 class="benefit-title">GOAL-BUILT PAD WORK</h3>
+            <p class="benefit-desc">Pad work sessions structured around your exact goals — whether fitness, clean technical speed, or ring sharpness.</p>
+          </div>
+
+          <!-- Card 3: Defense & Ring IQ (Shield / Crosshair Icon) -->
+          <div class="benefit-card reveal-on-scroll">
+            <span class="benefit-card-number">03 // REAL RING IQ</span>
+            <div class="benefit-icon">
+              <!-- Shield Crosshair Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <circle cx="12" cy="11" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="benefit-title">DEFENSE, COUNTERS & RING IQ</h3>
+            <p class="benefit-desc">Learn slip lines, parries, range, and timing. Gain real ring intelligence and strategy — not just endless cardio drills.</p>
+          </div>
+
+          <!-- Card 4: High Intensity (Conditioning / Lightning Icon) -->
+          <div class="benefit-card reveal-on-scroll">
+            <span class="benefit-card-number">04 // HIGH INTENSITY</span>
+            <div class="benefit-icon">
+              <!-- Lightning / Flame Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="benefit-title">HIGH-INTENSITY CONDITIONING</h3>
+            <p class="benefit-desc">Targeted boxing-specific conditioning if weight loss, explosive endurance, and physical fight fitness are your top priorities.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HIGHLIGHTS SECTION (TRAINING CLIPS — 7 CLIPS TOTAL) -->
+    <section class="section-padding" id="highlights">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">TRAINING CLIPS</div>
+          <h2 class="section-title">HIGHLIGHTS</h2>
+          <p class="section-desc">Watch pad work, sparring and fight highlights in action.</p>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="video-grid">
+            
+            <!-- Slot 1: qPznZXcI9Gk -->
+            <div class="video-card reveal-on-scroll" tabindex="0" role="button" aria-label="Play video: Mitt work" data-video-id="qPznZXcI9Gk">
+              <div class="video-thumbnail-wrapper">
+                <img src="https://img.youtube.com/vi/qPznZXcI9Gk/hqdefault.jpg" alt="Mitt work training clip">
+                <div class="play-button-overlay">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <div class="video-caption">
+                Mitt work
+              </div>
+            </div>
+
+            <!-- Slot 2: _uWkwVnu9G4 -->
+            <div class="video-card reveal-on-scroll" tabindex="0" role="button" aria-label="Play video: Sparring highlights" data-video-id="_uWkwVnu9G4">
+              <div class="video-thumbnail-wrapper">
+                <img src="https://img.youtube.com/vi/_uWkwVnu9G4/hqdefault.jpg" alt="Sparring highlights training clip">
+                <div class="play-button-overlay">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <div class="video-caption">
+                Sparring highlights
+              </div>
+            </div>
+
+            <!-- Slot 3 (Inserted): dnuYJxj-ptI -->
+            <div class="video-card reveal-on-scroll" tabindex="0" role="button" aria-label="Play video: Sparring highlights" data-video-id="dnuYJxj-ptI">
+              <div class="video-thumbnail-wrapper">
+                <img src="https://img.youtube.com/vi/dnuYJxj-ptI/hqdefault.jpg" alt="Sparring highlights training clip">
+                <div class="play-button-overlay">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <div class="video-caption">
+                Sparring highlights
+              </div>
+            </div>
+
+            <!-- Slot 4: u98uWEhmwbY -->
+            <div class="video-card reveal-on-scroll" tabindex="0" role="button" aria-label="Play video: Sparring highlights" data-video-id="u98uWEhmwbY">
+              <div class="video-thumbnail-wrapper">
+                <img src="https://img.youtube.com/vi/u98uWEhmwbY/hqdefault.jpg" alt="Sparring highlights training clip">
+                <div class="play-button-overlay">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <div class="video-caption">
+                Sparring highlights
+              </div>
+            </div>
+
+            <!-- Slot 5: d41FNVmzOaU -->
+            <div class="video-card reveal-on-scroll" tabindex="0" role="button" aria-label="Play video: Sparring highlights" data-video-id="d41FNVmzOaU">
+              <div class="video-thumbnail-wrapper">
+                <img src="https://img.youtube.com/vi/d41FNVmzOaU/hqdefault.jpg" alt="Sparring highlights training clip">
+                <div class="play-button-overlay">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <div class="video-caption">
+                Sparring highlights
+              </div>
+            </div>
+
+            <!-- Slot 6: YF3X4Z1w744 -->
+            <div class="video-card reveal-on-scroll" tabindex="0" role="button" aria-label="Play video: Fight highlights" data-video-id="YF3X4Z1w744">
+              <div class="video-thumbnail-wrapper">
+                <img src="https://img.youtube.com/vi/YF3X4Z1w744/hqdefault.jpg" alt="Fight highlights clip">
+                <div class="play-button-overlay">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <div class="video-caption">
+                Fight highlights
+              </div>
+            </div>
+
+            <!-- Slot 7: DwhUpYatFYc -->
+            <div class="video-card reveal-on-scroll" tabindex="0" role="button" aria-label="Play video: Fight highlights" data-video-id="DwhUpYatFYc">
+              <div class="video-thumbnail-wrapper">
+                <img src="https://img.youtube.com/vi/DwhUpYatFYc/hqdefault.jpg" alt="Fight highlights clip">
+                <div class="play-button-overlay">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <div class="video-caption">
+                Fight highlights
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-swipe-hint" aria-hidden="true" title="Swipe to view more">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CLIENT PROGRESS SECTION -->
+    <section class="section-padding fight-night-section" id="client-highlights">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag" style="color: var(--red-accent);">CLIENT PROGRESS</div>
+          <h2 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.2rem);">CLIENT PROGRESS</h2>
+          <p class="section-desc" style="color: #A0A0A0;">Southpaw or orthodox, tall or short, experience or not, I accommodate to you. Watch 1-on-1 private sessions.</p>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="fight-night-spotlight">
+            
+            <!-- Card 1: Noel (mdWgArUCSSY) -->
+            <div class="fight-night-card video-card reveal-on-scroll" tabindex="0" role="button" aria-label="Play video: Client's Mitt Work - Noel" data-video-id="mdWgArUCSSY" style="cursor: pointer;">
+              <div class="fight-night-img-wrapper" style="position: relative;">
+                <img src="https://img.youtube.com/vi/mdWgArUCSSY/hqdefault.jpg" alt="Client's Mitt Work - Noel training clip">
+                <div class="play-button-overlay">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <div class="fight-night-overlay-text">
+                <h3 class="fight-night-title">Client's Mitt Work - Noel</h3>
+              </div>
+            </div>
+
+            <!-- Card 2: Jason (uuNK3az6unw) -->
+            <div class="fight-night-card video-card reveal-on-scroll" tabindex="0" role="button" aria-label="Play video: Southpaw Client - Jason" data-video-id="uuNK3az6unw" style="cursor: pointer;">
+              <div class="fight-night-img-wrapper" style="position: relative;">
+                <img src="https://img.youtube.com/vi/uuNK3az6unw/hqdefault.jpg" alt="Southpaw Client - Jason training clip">
+                <div class="play-button-overlay">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <div class="fight-night-overlay-text">
+                <h3 class="fight-night-title">Southpaw Client - Jason</h3>
+              </div>
+            </div>
+
+            <!-- Card 3: Matt (WykKV1-1w4I) -->
+            <div class="fight-night-card video-card reveal-on-scroll" tabindex="0" role="button" aria-label="Play video: Client's Mitt Work - Matt" data-video-id="WykKV1-1w4I" style="cursor: pointer;">
+              <div class="fight-night-img-wrapper" style="position: relative;">
+                <img src="https://img.youtube.com/vi/WykKV1-1w4I/hqdefault.jpg" alt="Client's Mitt Work - Matt training clip">
+                <div class="play-button-overlay">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+              <div class="fight-night-overlay-text">
+                <h3 class="fight-night-title">Client's Mitt Work - Matt</h3>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-swipe-hint" aria-hidden="true" title="Swipe to view more">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. WHAT CLIENTS SAY SECTION -->
+    <section class="section-padding" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">TESTIMONIALS</div>
+          <h2 class="section-title">WHAT CLIENTS SAY</h2>
+          <p class="section-desc">Feedback from 1-on-1 clients</p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-quote-mark">“</div>
+            <p class="testimonial-text">
+              "Been training with coach for few months and the feedback was amazing. Coach had good patient, provide many form correction, giving many different strategies that suit my pace and momentum. Unlike many other gym I went to in the past. Highly recommend to engage coach!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar-placeholder">J</div>
+              <div class="author-info">
+                <div class="author-name">Jason</div>
+                <div class="author-detail">1-on-1 Client • Tengah</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-quote-mark">“</div>
+            <p class="testimonial-text">
+              "Never boxed before and was honestly intimidated to start, but zi en made the first session so easy to follow. No judgment and clear coaching at my pace. He came straight to my gym too, great session!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar-placeholder">GL</div>
+              <div class="author-info">
+                <div class="author-name">Gwen L.</div>
+                <div class="author-detail">1-on-1 Client • Hillview</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-quote-mark">“</div>
+            <p class="testimonial-text">
+              "Coach Z teaches actual ring IQ and head movement, not just mindless cardio. You actually feel like a boxer while getting an intense workout."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar-placeholder">MD</div>
+              <div class="author-info">
+                <div class="author-name">Marcus D.</div>
+                <div class="author-detail">1-on-1 Client • River Valley</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. HOW IT WORKS SECTION -->
+    <section class="section-padding" id="how-it-works" style="background-color: #111111;">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">CONVENIENCE & FLEXIBILITY</div>
+          <h2 class="section-title">HOW IT WORKS</h2>
+          <p class="section-desc">Park, condo gym, void deck — wherever's convenient. No need to find a gym or figure out transport.</p>
+        </div>
+
+        <div class="steps-grid">
+          
+          <div class="step-card reveal-on-scroll">
+            <div class="step-number">01</div>
+            <h3 class="step-title">PICK YOUR LOCATION</h3>
+            <p class="step-desc">Your condo facility, nearby park, multi-story carpark, or private space anywhere in Singapore.</p>
+          </div>
+
+          <div class="step-card reveal-on-scroll">
+            <div class="step-number">02</div>
+            <h3 class="step-title">SCHEDULE 1-HOUR SLOTS</h3>
+            <p class="step-desc">Flexible scheduling at your convenience — early mornings, lunch hours, or post-work slots.</p>
+          </div>
+
+          <div class="step-card reveal-on-scroll">
+            <div class="step-number">03</div>
+            <h3 class="step-title">TRAIN HASSLE-FREE</h3>
+            <p class="step-desc">Training equipment provided (pads, gloves). Just show up ready to work.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PRICING SECTION -->
+    <section class="section-padding" id="pricing">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">TRANSPARENT RATES</div>
+          <h2 class="section-title">PRICING</h2>
+          <p class="section-desc">No membership fees, zero hidden contracts. Pay per session or save with a 4-class bundle.</p>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <!-- Tier 1 -->
+          <div class="pricing-card reveal-on-scroll">
+            <div>
+              <h3 class="pricing-title">FIRST SESSION</h3>
+              <div class="pricing-subtitle">INTRODUCTORY TRIAL</div>
+              <div class="pricing-amount">$40</div>
+              <div class="pricing-unit">/ 45 MINUTES</div>
+
+              <ul class="pricing-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  Form & stance assessment
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  Basic combination pad work
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  Equipment provided
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  Travel to your preferred location
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-secondary btn-full" data-package="First Session ($40)">
+              Select First Session
+            </button>
+          </div>
+
+          <!-- Tier 2 -->
+          <div class="pricing-card reveal-on-scroll">
+            <div>
+              <h3 class="pricing-title">STANDARD SESSION</h3>
+              <div class="pricing-subtitle">PAY AS YOU GO</div>
+              <div class="pricing-amount">$75</div>
+              <div class="pricing-unit">/ 1-HOUR CLASS</div>
+
+              <ul class="pricing-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  Full 60-min 1-on-1 coaching
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  High-intensity pad work & defense
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  Customized fight conditioning
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  Travel to your preferred location
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-secondary btn-full" data-package="Standard Session ($75)">
+              Select Standard Session
+            </button>
+          </div>
+
+          <!-- Tier 3 (Featured) -->
+          <div class="pricing-card featured reveal-on-scroll">
+            <div class="pricing-badge">BEST VALUE</div>
+            <div>
+              <h3 class="pricing-title">4-CLASS BUNDLE</h3>
+              <div class="pricing-subtitle">CONSISTENT PROGRESS</div>
+              <div class="pricing-amount">$265</div>
+              <div class="pricing-unit">/ 4 x 1-HOUR CLASSES</div>
+
+              <ul class="pricing-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  Save $35 compared to single sessions
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  Progressive technique curriculum
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  Priority slot booking
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                  Equipment & travel included
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-primary btn-full" data-package="4-Class Bundle ($265)">
+              Book 4-Class Bundle
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTACT SECTION -->
+    <section class="section-padding" id="contact" style="background-color: #0A0A0A;">
+      <div class="container">
+        <div class="contact-card reveal-on-scroll">
+          <div class="section-tag">START TRAINING TODAY</div>
+          <h2 class="contact-headline">LET'S GET TO WORK</h2>
+          
+          <p class="contact-subhead">
+            Tell me your goals and a convenient location — I'll take it from there.
+          </p>
+
+          <a href="https://wa.me/6597318538?text=Hi%20Zi%20En%2C%20I%27m%20interested%20in%20booking%20a%201-on-1%20boxing%20session%20in%20Singapore." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-primary whatsapp-btn">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-0.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            Message me on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand">ZE BOXING PT<span style="color: var(--red-accent);">.</span></div>
+          <p class="footer-tagline">
+            1-on-1 private boxing personal training in Singapore. Also available for corporate events and team-building sessions.
+          </p>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--red-accent)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:chanzien253@gmail.com" class="footer-email">chanzien253@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">NAVIGATION</h4>
+          <ul class="footer-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#what-you-get">What You Get</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#client-highlights">Client Progress</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-text">
+          © 2026 ZE BOXING PT. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- VIDEO MODAL CONTAINER -->
+  <div class="modal-backdrop" id="videoModal" aria-hidden="true" role="dialog" aria-label="Video Player Modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close video player">✕</button>
+      <div class="modal-iframe-wrapper">
+        <iframe id="modalIframe" src="" title="Boxing Video Clip" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
