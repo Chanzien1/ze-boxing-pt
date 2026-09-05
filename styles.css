@@ -467,14 +467,15 @@ img {
     line-height: 1.35;
   }
 
-  /* Horizontal Scroll-Snap Carousel for Training Clips & Client Progress on Mobile */
+  /* Horizontal Scroll-Snap Carousel for Training Clips, Client Progress & Testimonials on Mobile */
   .carousel-wrapper {
     position: relative;
     width: 100%;
   }
 
   .video-grid,
-  .fight-night-spotlight {
+  .fight-night-spotlight,
+  .testimonials-grid {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
@@ -496,24 +497,30 @@ img {
   }
 
   .video-grid::-webkit-scrollbar,
-  .fight-night-spotlight::-webkit-scrollbar {
+  .fight-night-spotlight::-webkit-scrollbar,
+  .testimonials-grid::-webkit-scrollbar {
     height: 4px;
   }
 
   .video-grid::-webkit-scrollbar-thumb,
-  .fight-night-spotlight::-webkit-scrollbar-thumb {
+  .fight-night-spotlight::-webkit-scrollbar-thumb,
+  .testimonials-grid::-webkit-scrollbar-thumb {
     background: var(--red-accent);
     border-radius: 2px;
   }
 
   .video-card,
-  .fight-night-card {
+  .fight-night-card,
+  .testimonial-card {
     flex: 0 0 76vw !important;
     min-width: 76vw !important;
     max-width: 76vw !important;
     width: 76vw !important;
     scroll-snap-align: start !important;
     scroll-snap-stop: always !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .carousel-swipe-hint {
