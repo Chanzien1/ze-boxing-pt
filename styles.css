@@ -483,6 +483,7 @@ img {
     overflow-y: hidden !important;
     scroll-snap-type: x mandatory !important;
     -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-x pan-y !important;
     padding-top: 8px !important;
     padding-bottom: 24px !important;
     gap: 14px !important;
@@ -1360,15 +1361,18 @@ img {
 
 .modal-iframe-wrapper {
   position: relative;
-  aspect-ratio: 16 / 9;
-  width: 100%;
+  aspect-ratio: 16 / 9 !important;
+  width: 100% !important;
+  max-width: 100% !important;
   background-color: #000;
+  overflow: hidden;
 }
 
 .modal-iframe-wrapper iframe {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   border: none;
+  display: block;
 }
 
 /* ANIMATIONS ON SCROLL (RUN ONCE CLEANLY) */

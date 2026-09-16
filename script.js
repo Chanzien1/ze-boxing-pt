@@ -61,13 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function openVideoModal(youtubeId) {
     if (!videoModal || !modalIframe) return;
-    // When running directly from local file system (file://), YouTube restricts embedded playback with Error 153.
-    // We open the video in YouTube directly or embed cleanly depending on environment.
     if (window.location.protocol === 'file:') {
       window.open(`https://www.youtube.com/watch?v=${youtubeId}`, '_blank');
       return;
     }
-    modalIframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&playsinline=1&enablejsapi=1&rel=0&vq=hd1080&controls=1`;
+    // Clean embed URL format ensuring 16:9 player container rendering
+    modalIframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&playsinline=1&enablejsapi=1&rel=0&controls=1`;
     videoModal.classList.add('is-open');
     videoModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
