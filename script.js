@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     // Clean embed URL format ensuring 16:9 player container rendering
-    modalIframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&playsinline=1&enablejsapi=1&rel=0&controls=1`;
+    modalIframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&playsinline=1&enablejsapi=1&rel=0&controls=1&modestbranding=1`;
     videoModal.classList.add('is-open');
     videoModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
@@ -118,7 +118,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. WhatsApp Package Selection Helper
+  // 4. Interactive Carousel Arrow Button Navigation
+  const carouselNextBtns = document.querySelectorAll('.carousel-next-btn');
+  carouselNextBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      const wrapper = btn.closest('.carousel-wrapper');
+      if (!wrapper) return;
+      const scrollContainer = wrapper.querySelector('.video-grid, .fight-night-spotlight, .testimonials-grid');
+      if (!scrollContainer) return;
+      
+      const card = scrollContainer.querySelector('.video-card, .fight-night-card, .testimonial-card');
+      const step = card ? card.offsetWidth + 14 : scrollContainer.offsetWidth * 0.78;
+      const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+      
+      if (scrollContainer.scrollLeft >= maxScroll - 15) {
+        scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        scrollContainer.scrollBy({ left: step, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // 5. WhatsApp Package Selection Helper
   const packageButtons = document.querySelectorAll('[data-package]');
   const baseWaUrl = 'https://wa.me/6597318538';
 
